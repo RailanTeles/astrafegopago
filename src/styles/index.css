@@ -1,0 +1,172 @@
+/* Fontes */
+@font-face {
+    font-family: "Poppins_Semibold";
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+/* Animações */
+.observer {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-out;
+} 
+
+.observer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Configurações Gerais */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NavBar */
+.navbar{
+    width: 100%;
+    background-color: #64ABFF;
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.logo{
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo > img{
+    width: auto;
+    height: 100%;
+}
+
+.NavBarItens{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavBarItem{
+    font-size: 20px;
+    font-family: "Poppins_Semibold";
+    text-decoration-line: none;
+    color:black;
+    position: relative; 
+    display: inline-block; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.NavBarItem:hover{
+    transform: scale(1.2); 
+    color:white;
+}
+
+.NavBarItem::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 0%; 
+    height: 2px; 
+    background-color: black; 
+    transition: width 0.3s ease; 
+}
+
+.NavBarItem:hover::after {
+    width: 100%; 
+    background-color: white; 
+}
+
+.toggle{
+    display: none;
+}
+
+.NavBarMobile{
+    height: 0;
+    width: 100%;
+    background-color: #64ABFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+    pointer-events: none; 
+    transition: height 0.5s ease, padding 0.5s ease;
+}
+
+/* Telas médias */
+@media screen  and (max-width: 900px){
+    /* Navbar */
+    .logo > img{
+        height: 70%;
+    }
+    
+    .NavBarItem{
+        font-size: 15px;
+    }
+}
+
+/* Telas pequenas */
+@media screen  and (max-width: 650px){
+    /* NavBar */
+    .navbar{
+        justify-content: center;
+    }
+
+    .logo{
+        width: 50%;
+    }
+    
+    .logo > img{
+        height: 80%;
+    }
+
+    .NavBarItens{
+        display: none;
+    }
+
+    .toggle{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .NavBarMobile > a {
+        margin: 1% 0%;
+        font-size: 20px;
+    }
+    
+    .OnNavBar {
+        height: auto; 
+        padding: 5% 0%; 
+        pointer-events: auto; 
+    }
+    
+}
+
+/* Smartphones menores (até 480px) */
+@media screen and (max-width: 480px) {
+    /* NavBar */
+    .logo > img{
+        height: 60%;
+    }
+
+    .toggle > img{
+        height: 60%;
+    }
+}
