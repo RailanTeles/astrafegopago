@@ -20,6 +20,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins_Semibold";
 }
 
 body, html{
@@ -99,13 +100,91 @@ body, html{
 .NavBarMobile{
     height: 0;
     width: 100%;
+    gap: 15px;
     background-color: #64ABFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden; 
     pointer-events: none; 
-    transition: height 0.5s ease, padding 0.5s ease;
+    transition: height 1s ease, padding 1s ease;
+}
+
+/* Título */
+.Intro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3% 0%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Anuncie{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title{
+    font-size: 250%;
+    text-align: center;
+    width: 75%;
+}
+
+span{
+    color: #3081E1;
+}
+
+.ContactLinks{
+    text-decoration-line: none;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #3081E1 2px solid;
+    border-radius: 30px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+.ContactLinks:hover{
+    transform: scale(1.1);
+    background-color: #64ABFF;
+    color: white;
+}
+
+.itens{
+    width: 90%;
+    color: black;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5%;
+}
+
+.itens > img{
+    object-fit: contain;
+    flex-grow: 0; 
+    width: 4%;
+}
+
+.AnuncieImage {
+    width: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.AnuncieImage > img {
+    width: 85%; 
+    height: auto;
+    border-radius: 5px;
 }
 
 /* Telas médias */
@@ -117,6 +196,26 @@ body, html{
     
     .NavBarItem{
         font-size: 15px;
+    }
+
+    /* Tìtulo */
+    .Anuncie{
+        width: 55%;
+    }
+
+    .title{
+        font-size: 220%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .itens{
+        font-size: 120%;
+        padding: 1% 5%;
+    }
+
+    .AnuncieImage {
+        width: 40%;
     }
 }
 
@@ -145,16 +244,49 @@ body, html{
         justify-content: center;
         align-items: center;
     }
-    
+
+    .toggle > img {
+        height: 80%;
+    }
+
     .NavBarMobile > a {
         margin: 1% 0%;
-        font-size: 20px;
+        font-size: 22px;
     }
     
     .OnNavBar {
         height: auto; 
         padding: 5% 0%; 
         pointer-events: auto; 
+        overflow: visible; 
+    }
+
+    /* Título */
+    .Intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Anuncie{
+        width: 90%;
+    }
+
+    .title{
+        font-size: 250%;
+        text-align: center;
+        width: 90%;
+    }
+
+    .itens{
+        font-size: 120%;
+        padding: 1% 5%;
+    }
+
+    .AnuncieImage {
+        width: 90%;
+        justify-content: center;
+        margin-top: -25%;
+        z-index: -1;
     }
     
 }
@@ -169,4 +301,10 @@ body, html{
     .toggle > img{
         height: 60%;
     }
+
+    /* Tìtulo */
+    .title{
+        font-size: 200%;
+    }
+
 }

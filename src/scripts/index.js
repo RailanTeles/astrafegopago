@@ -23,7 +23,7 @@ toggle.addEventListener('click', ()=>{
     navBar.classList.toggle("OnNavBar");
 
     
-    toggle.style.transition = "transform 0.7s ease"; 
+    toggle.style.transition = "transform 0.3s ease"; 
     toggle.style.transform = "rotate(360deg)"; 
 
     setTimeout(() => {
@@ -45,4 +45,22 @@ itensNavBarMobile.forEach(item => {
             toggleImg.src = "src/images/toggle.png";
         }, 500);
     });
+});
+
+
+// Imagem
+document.addEventListener("DOMContentLoaded", function () {
+  const img = document.getElementById("anuncie-image");
+
+  function updateImageSrc() {
+      if (window.innerWidth <= 650) {
+          img.src = "src/images/Tecno_image_mobile.png"; 
+      } else {
+          img.src = "src/images/Tecno_image.png"; 
+      }
+  }
+
+  updateImageSrc();
+
+  window.addEventListener("resize", updateImageSrc);
 });
