@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const img = document.getElementById("anuncie-image");
 
   function updateImageSrc() {
-      if (window.innerWidth <= 650) {
+      if (window.innerWidth <= 700) {
           img.src = "src/images/Tecno_image_mobile.png"; 
       } else {
           img.src = "src/images/Tecno_image.png"; 

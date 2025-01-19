@@ -171,7 +171,7 @@ span{
 .itens > img{
     object-fit: contain;
     flex-grow: 0; 
-    width: 4%;
+    width: 3%;
 }
 
 .AnuncieImage {
@@ -182,7 +182,7 @@ span{
 }
 
 .AnuncieImage > img {
-    width: 85%; 
+    width: 100%; 
     height: auto;
     border-radius: 5px;
 }
@@ -215,12 +215,12 @@ span{
     }
 
     .AnuncieImage {
-        width: 40%;
+        width: 45%;
     }
 }
 
 /* Telas pequenas */
-@media screen  and (max-width: 650px){
+@media screen  and (max-width: 700px){
     /* NavBar */
     .navbar{
         justify-content: center;
@@ -283,7 +283,7 @@ span{
     }
 
     .AnuncieImage {
-        width: 90%;
+        width: 100%;
         justify-content: center;
         margin-top: -25%;
         z-index: -1;
