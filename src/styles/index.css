@@ -781,3 +781,16 @@ details[open] summary::before {
         scroll-behavior: smooth;
     }
 }
+
+/* Configurações para telas grandes */
+@media (min-width: 1600px) {
+    .WorksContent{
+    gap: 350px;
+    }
+
+   .WorkImg{
+    width: 25%;
+    margin-bottom: -15%;
+    margin-right: 1%;
+    }
+}
