@@ -98,7 +98,7 @@ body, html{
 }
 
 .NavBarMobile{
-    height: auto;
+    height: 0;
     width: 100%;
     gap: 15px;
     background-color: #64ABFF;
