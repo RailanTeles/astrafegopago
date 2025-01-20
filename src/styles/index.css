@@ -785,12 +785,12 @@ details[open] summary::before {
 /* Configurações para telas grandes */
 @media (min-width: 1600px) {
     .WorksContent{
-    gap: 350px;
+    gap: 250px;
     }
 
    .WorkImg{
     width: 25%;
-    margin-bottom: -15%;
+    margin-bottom: -18%;
     margin-right: 1%;
     }
 }
