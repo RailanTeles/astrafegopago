@@ -250,7 +250,6 @@ span{
     background-color: #3081E1;
     padding: 4% 0%;
     border-radius: 15px;
-    gap: 100px;
 }
 
 .WorksText{
@@ -261,6 +260,7 @@ span{
     margin-left: 3%;
     font-size: 17px;
     text-align: justify;
+    padding-bottom: 18%;
 }
 
 .KnowMore{
@@ -517,10 +517,6 @@ details[open] summary::before {
     .Works > h1{
         font-size: 40px;
     }
-    
-    .WorksContent{
-        gap: 50px;
-    }
 
     .WorksText{
         font-size: 15px;
@@ -738,6 +734,7 @@ details[open] summary::before {
     .Works > h1{
         font-size: 23px;
     }
+    
     .WorksText{
         gap: 20px;
     }
@@ -784,10 +781,6 @@ details[open] summary::before {
 
 /* Configurações para telas grandes */
 @media (min-width: 1600px) {
-    .WorksContent{
-    gap: 150px;
-    }
-
    .WorkImg{
     width: 25%;
     margin-bottom: -25%;
