@@ -777,7 +777,7 @@ details[open] summary::before {
 
 /* Scroll */
 @media (min-width: 700px) {
-    body {
+    html, body {
         scroll-behavior: smooth;
     }
 }
