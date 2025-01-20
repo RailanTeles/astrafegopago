@@ -307,6 +307,69 @@ span{
     width: 100%;
 }
 
+/* Perguntas */
+.Questions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0%;
+}
+
+.QuestionParent{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.QuestionParent > h1{
+    text-align: start;
+    font-size: 50px;
+}
+
+.QuestionsDetails{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.QuestionsDetails > details{
+    font-size: 22px;
+    color: #3081E1;
+    text-align: justify;
+}
+
+details > summary {
+    list-style: none; 
+    cursor: pointer;  
+    position: relative; 
+    padding-left: 30px;
+}
+
+details > p {
+    margin-top: 1%;
+    margin-left: 30px;
+    padding: 20px;
+    border: #3081E1 2px solid;
+    border-radius: 30px;
+}
+
+details summary::before {
+    content: '▶'; 
+    position: absolute;
+    left: 0; 
+    transform: rotate(0deg);
+    transition: transform 1s ease; 
+}
+
+details[open] summary::before {
+    content: '▼'; 
+    transform: rotate(0deg); 
+}
+
 /* Telas médias */
 @media screen  and (max-width: 900px){
     /* Navbar */
@@ -378,6 +441,15 @@ span{
 
     .WorkImg{
         margin-bottom: -35%;
+    }
+
+    /* Perguntas */
+    .QuestionParent > h1{
+        font-size: 40px;
+    }
+
+    .QuestionsDetails > details{
+        font-size: 16px;
     }
 }
 
@@ -531,7 +603,7 @@ span{
 
     /* Como funciona */
     .Works > h1{
-        font-size: 30px;
+        font-size: 23px;
     }
     .WorksText{
         gap: 20px;
@@ -539,5 +611,18 @@ span{
 
     .KnowMore{
         width: 80%;
+    }
+
+    /* Perguntas */
+    .QuestionParent > h1{
+        font-size: 23px;
+    }
+
+    p{
+        text-align: left !important;
+    }
+
+    summary{
+        text-align: left;
     }
 }
