@@ -37,7 +37,7 @@ body, html{
     width: 100%;
     background-color: #64ABFF;
     display: flex;
-    padding: 2%;
+    padding: 2% 0%;
     justify-content: space-around;
 }
 
@@ -370,6 +370,104 @@ details[open] summary::before {
     transform: rotate(0deg); 
 }
 
+/* Contatos */
+.Contacts{
+    width: 100%;
+    background-color: #64ABFF;
+    display: flex;
+    margin-top: 5%;
+    padding: 5% 0%;
+}
+
+.ContactLogo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ContactLogo > h1{
+    font-size: 50px;
+}
+
+.ContactLogo > img{
+    width: 20%;
+    min-width: 100px;
+}
+
+.AllContacts{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.SocialMedia{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+}
+
+.SocialChild{
+    display: flex;
+    align-items: center;
+    background-color: #3081E1;
+    padding: 3%;
+    border-radius: 90px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    width: 10%;
+    min-width: 50px;
+}
+
+.SocialChild:hover{
+    transform: scale(1.2); 
+    background-color: #041833;
+}
+
+.SocialChild > img{
+    width: 100%;
+}
+
+.DirectContacts{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.DirectChild{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #3081E1;
+    width: 60%;
+    min-width: 312px;
+    padding: 1% 2%;
+    border-radius: 20px;
+    gap: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 14px;
+}
+
+.DirectChild:hover{
+    transform: scale(1.1); 
+    background-color: #041833;
+}
+
+.DirectChild > img{
+    width: 15%;
+}
+
 /* Telas médias */
 @media screen  and (max-width: 900px){
     /* Navbar */
@@ -451,6 +549,7 @@ details[open] summary::before {
     .QuestionsDetails > details{
         font-size: 16px;
     }
+
 }
 
 /* Telas pequenas */
@@ -565,6 +664,41 @@ details[open] summary::before {
     .KnowMore{
         width: 50%;
     }
+
+    /* Contatos */
+    .Contacts{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .ContactLogo{
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .ContactLogo > h1{
+        font-size: 40px;
+    }
+
+    .ContactLogo > img{
+        width: 15%;
+        min-width: 0px;
+    }
+
+    .AllContacts{
+        width: 90%;
+    }
+
+    .SocialChild{
+        padding: 3%;
+    }
+
+    .DirectContacts{
+        gap: 25px;
+    }
 }
 
 /* Smartphones menores (até 480px) */
@@ -625,4 +759,19 @@ details[open] summary::before {
     summary{
         text-align: left;
     }
+
+    /* Contatos */
+    .SocialChild{
+        padding: 4%;
+        justify-content: center;
+    }
+
+    .ContactLogo > h1{
+        font-size: 40px;
+    }    
+
+    .DirectChild{
+        min-width: 310px;
+    }
+
 }
