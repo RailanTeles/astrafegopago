@@ -774,3 +774,10 @@ details[open] summary::before {
     }
 
 }
+
+/* Scroll */
+@media (min-width: 700px) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
