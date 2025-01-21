@@ -308,7 +308,9 @@ span{
 
 .KnowMore:hover{
     transform: scale(1.1); 
-    color:white;
+    color: #3081E1;
+    background-color: white;
+    border: #3081E1 2px solid;
 }
 
 .KnowMoreChild{
@@ -722,6 +724,7 @@ details[open] summary::before {
 
     .ContactLogo > h1{
         font-size: 40px;
+        color: white;
     }
 
     .ContactLogo > img{
