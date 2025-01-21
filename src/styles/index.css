@@ -623,6 +623,7 @@ details[open] summary::before {
     .NavBarMobile > a {
         margin: 1% 0%;
         font-size: 22px;
+        color: white;
     }
     
     .OnNavBar {
