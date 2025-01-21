@@ -18,33 +18,25 @@ const toggle = document.querySelector(".toggle");
 const navBar = document.querySelector(".NavBarMobile");
 const navBarCont = document.querySelector(".NavBarMobileContent");
 const toggleImg = document.querySelector("#toggleIMG");
+const overlay = document.querySelector(".overlay");
 
 toggle.addEventListener('click', ()=>{
-    navBar.classList.toggle("OnNavBar");
-
-    
-    toggle.style.transition = "transform 0.3s ease"; 
-    toggle.style.transform = "rotate(360deg)"; 
-
-    setTimeout(() => {
-        toggle.style.transform = "rotate(0deg)"; 
-        if (navBar.classList.contains("OnNavBar")) {
-            toggleImg.src = "src/images/close.png"
-        } else {
-            toggleImg.src = "src/images/toggle.png"
-        }
-    }, 500); 
+    navBar.classList.add("OnNavBar");
+    overlay.classList.add("OnOverlay");
 });
 
 const itensNavBarMobile = document.querySelectorAll(".NavItensMobile");
 
 itensNavBarMobile.forEach(item => {
     item.addEventListener('click', () => {
-        setTimeout(() => {
             navBar.classList.remove("OnNavBar");
-            toggleImg.src = "src/images/toggle.png";
-        }, 500);
+            overlay.classList.remove("OnOverlay");
     });
+});
+
+overlay.addEventListener('click', ()=>{
+    navBar.classList.remove("OnNavBar");
+    overlay.classList.remove("OnOverlay");
 });
 
 

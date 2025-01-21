@@ -100,16 +100,33 @@ body, html{
 }
 
 .NavBarMobile{
-    height: 0;
-    width: 100%;
-    gap: 15px;
+    height: 100%;
+    width: 70%;
+    gap: 30px;
     background-color: #64ABFF;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: hidden; 
-    pointer-events: none; 
-    transition: height 1s ease, padding 1s ease;
+    align-items: center; 
+    padding-top: 15%;
+    z-index: 100;
+    position: absolute;
+    margin-left: -70%;
+    transition: margin-left 0.3s ease;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none;
+    z-index: 10;
+}
+
+.NavBarMobile > a{
+    text-align: center;
 }
 
 /* Título */
@@ -607,10 +624,11 @@ details[open] summary::before {
     }
     
     .OnNavBar {
-        height: auto; 
-        padding: 5% 0%; 
-        pointer-events: auto; 
-        overflow: visible; 
+        margin-left: 0%;
+    }
+
+    .OnOverlay{
+        display: block;
     }
 
     /* Título */
@@ -724,7 +742,7 @@ details[open] summary::before {
     }
 
     #Whatsapp_logo{
-        width: 25%;
+        width: 20%;
     }
 }
 
@@ -808,7 +826,7 @@ details[open] summary::before {
     }
 
     #Whatsapp_logo{
-        width: 35%;
+        width: 30%;
     }
 
 }
