@@ -270,7 +270,7 @@ span{
 .WorksContent{
     display: flex;
     width: 95%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     justify-content: space-between;
 }
 
