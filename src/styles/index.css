@@ -486,7 +486,7 @@ details[open] summary::before {
 }
 
 #Whatsapp_logo{
-    width: 12%;
+    width: 8%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -742,7 +742,7 @@ details[open] summary::before {
     }
 
     #Whatsapp_logo{
-        width: 20%;
+        display: none;
     }
 }
 
