@@ -826,7 +826,7 @@ details[open] summary::before {
     }
 
     #Whatsapp_logo{
-        width: 30%;
+        display: none;
     }
 
 }
