@@ -586,7 +586,7 @@ details[open] summary::before {
     }
 
     #Whatsapp_logo{
-        width: 15%;
+        display: none;
     }
 }
 
@@ -745,9 +745,6 @@ details[open] summary::before {
         gap: 25px;
     }
 
-    #Whatsapp_logo{
-        display: none;
-    }
 }
 
 /* Smartphones menores (até 480px) */
