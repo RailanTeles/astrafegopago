@@ -4,7 +4,7 @@
     src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
-/* Animações */
+/* Animações.  */
 .observer {
     opacity: 0;
     transform: translateY(20px);
